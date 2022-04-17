@@ -6,7 +6,7 @@ function Form({ refresh }) {
   const [formData, setFormData] = useState({
     name: "",
     age: "",
-    department: "",
+    department: "marketing",
     marital_status: false,
     address: "",
     salary: 0,
@@ -45,21 +45,22 @@ function Form({ refresh }) {
         onChange={(e) => handleChange(e)}
         onSubmit={handleSubmit}
       >
-        <input type="text" name="name" id="" placeholder="Enter name" />
-        <input type="number" name="age" id="" placeholder="Enter age" />
+        <input type="text" name="name" id="" placeholder="Enter name"  required/>
+        <input type="number" name="age" id="" placeholder="Enter age" min="18" max="56" />
         <textarea
           name="address"
           id=""
           cols="30"
           rows="10"
           placeholder="Enter address"
+          required
         ></textarea>
         <select name="department" id="">
           <option value="">Select Department</option>
-          <option value="marketing">Marketing</option>
+          <option value="marketing" selected>Marketing</option>
           <option value="sales">Sales</option>
         </select>
-        <input type="number" name="salary" id="" placeholder="Enter salary" />
+        <input type="number" name="salary" id="" placeholder="Enter salary" required />
         <label htmlFor="marital-status">
           <input type="checkbox" name="marital_status" id="" />
           Marital status

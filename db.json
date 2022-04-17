@@ -17,6 +17,24 @@
       "address": "sadfsdafdsaf\nadfasdfasd\nadafsddf",
       "salary": "984125",
       "id": 2
+    },
+    {
+      "name": "Bibin",
+      "age": "26",
+      "department": "marketing",
+      "marital_status": true,
+      "address": "sadfsdafdsaf\nadfasdfasd\nadafsddf",
+      "salary": "9841225",
+      "id": 3
+    },
+    {
+      "name": "Ravi k",
+      "age": "42",
+      "department": "sales",
+      "marital_status": true,
+      "address": "adfasfsadf",
+      "salary": "22342222",
+      "id": 4
     }
   ]
 }
